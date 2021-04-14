@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Web.Management.PHP</RootNamespace>
     <AssemblyName>Web.Management.PHP.Client</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>NewPHPMGRSNF.snk</AssemblyOriginatorKeyFile>
@@ -187,21 +187,21 @@
     <PostBuildEvent>if $(ConfigurationName) == Debug goto :debug
 
 :debug
-CALL "%25VS140COMNTOOLS%25\vsvars32.bat" &gt; NULL
-"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools\x64\sn.exe" -Vr $(TargetDir)$(TargetFileName)
-gacutil.exe /if "$(TargetPath)"
-sn -Vr $(TargetDir)ru-RU\$(TargetName).resources.dll
-gacutil /if $(TargetDir)ru-RU\$(TargetName).resources.dll
-sn -Vr $(TargetDir)de-DE\$(TargetName).resources.dll
-gacutil /if $(TargetDir)de-DE\$(TargetName).resources.dll
-sn -Vr $(TargetDir)nl-NL\$(TargetName).resources.dll
-gacutil /if $(TargetDir)nl-NL\$(TargetName).resources.dll
-sn -Vr $(TargetDir)tr-TR\$(TargetName).resources.dll
-gacutil /if $(TargetDir)tr-TR\$(TargetName).resources.dll
-sn -Vr $(TargetDir)ja-JP\$(TargetName).resources.dll
-gacutil /if $(TargetDir)ja-JP\$(TargetName).resources.dll
-sn -Vr $(TargetDir)fr-FR\$(TargetName).resources.dll
-gacutil /if $(TargetDir)fr-FR\$(TargetName).resources.dll
+
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\sn.exe" -Vr $(TargetDir)$(TargetFileName)
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\gacutil.exe" /if "$(TargetPath)"
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\sn.exe" -Vr $(TargetDir)ru-RU\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\gacutil.exe" /if $(TargetDir)ru-RU\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\sn.exe" -Vr $(TargetDir)de-DE\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\gacutil.exe" /if $(TargetDir)de-DE\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\sn.exe" -Vr $(TargetDir)nl-NL\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\gacutil.exe" /if $(TargetDir)nl-NL\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\sn.exe" -Vr $(TargetDir)tr-TR\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\gacutil.exe" /if $(TargetDir)tr-TR\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\sn.exe" -Vr $(TargetDir)ja-JP\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\gacutil.exe" /if $(TargetDir)ja-JP\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\sn.exe" -Vr $(TargetDir)fr-FR\$(TargetName).resources.dll
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\gacutil.exe" /if $(TargetDir)fr-FR\$(TargetName).resources.dll
 
 :exit</PostBuildEvent>
   </PropertyGroup>
